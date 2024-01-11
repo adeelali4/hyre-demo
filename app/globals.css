@@ -20,5 +20,20 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif !important;
 }
+
+.progress-bar {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+}
+
+.line-chart{
+  height: 150px !important;
+}
+
+/* .line-chart canvas{
+  max-height: 120px !important;
+  min-width: 470px !important;
+} */

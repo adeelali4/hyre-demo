@@ -1,8 +1,7 @@
 "use client"
 export default function History({children}){
-    console.log(children)
     return <>
-        <div className="m-3 p-4 mt-0 bg-orange-50 rounded-xl shadow grid grid-cols-5">
+        <div className="m-3 p-4 mt-0 bg-[#fdeee9] rounded-xl shadow grid grid-cols-5">
             <div className="col-span-1">
                 <img src={children.image} className="w-28 h-28 rounded-xl" />
             </div>

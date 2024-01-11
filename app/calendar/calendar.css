@@ -1,0 +1,80 @@
+.rbc-calendar *{
+    border-color: #fdeee9 !important;
+}
+
+.rbc-calendar{
+    box-shadow: 0 3px 10px rgb(239 82 37 / 0.2);
+}
+
+/* .rbc-time-slot{
+    margin-top: 20px;
+} */
+
+.rbc-label{
+    font-size: 70%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.rbc-timeslot-group{
+    min-height: 100px;
+    border-bottom: 0;
+}
+
+.rbc-time-content{
+    overflow: hidden;
+}
+
+.rbc-time-content:first-child > * + * > *{
+    border-left: 0;
+}
+
+.rbc-today{
+    background-color: #fdeee9;
+}
+
+.rbc-event:focus, .rbc-event:active, .rbc-day-slot .rbc-background-event{
+    background-color: #ef5225;
+    color: white;
+}
+
+.rbc-event, .rbc-day-slot .rbc-background-event {
+    background-color: white;
+    color: black;
+    /* background-color: #ef5225; */
+}
+
+.rbc-day-slot .rbc-events-container {
+    margin-left: 10px;
+}
+
+.rbc-day-slot .rbc-event-content{
+    font-weight: bold;
+}
+
+.rbc-current-time-indicator{
+    background-color: #ef5225;
+    height: 2px;
+    left: -800%;
+    right: -800%;
+}
+
+.rbc-day-slot .rbc-time-slot{
+    border-top:0;
+}
+
+.rbc-toolbar {
+    display: none;
+}
+
+.rbc-event-label{
+    font-size : 70%;
+}
+
+.rbc-time-view {
+    border-color: #fdeee9;
+}
+
+/* .rbc-time-slot{
+    margin-top: 50%;
+} */

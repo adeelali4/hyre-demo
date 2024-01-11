@@ -3,6 +3,7 @@ import './globals.css'
 import SideBar from './components/Sidebar'
 import TopBar from './components/Topbar'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -16,7 +17,7 @@ export default function RootLayout({ children }) {
       <body className={inter.className}>
           <div className='flex flex-row h-screen w-screen overflow-hidden'>
             <SideBar/>
-            <div className='w-screen overflow-y-auto'>
+            <div className='w-screen overflow-y-auto ml-6 pr-6'>
               <TopBar/>
               <div className='p-4'>
                 {children}

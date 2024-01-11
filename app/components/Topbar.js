@@ -1,8 +1,21 @@
+"use client"
+
+import { usePathname } from "next/navigation"
+import Constants from "../Constants"
+
 export default function TopBar(){
+  const path = usePathname();
+  let obj = Constants.MENU.find(x=> x.url == path);
+  if(obj == null){
+    obj = {
+      name : ""
+    };
+  }
+
     return <>
-      <nav className="flex items-center justify-between flex-wrap p-6">
+      <nav className="flex items-center justify-between flex-wrap p-4">
         <div className="flex items-center flex-shrink-0">
-          <span className="font-semibold text-xl tracking-tight">My Earning</span>
+          <span className="font-semibold text-xl tracking-tight">{obj.name}</span>
         </div>
         <div className="w-full lg:w-auto flex flex-wrap items-center">
           <div>
